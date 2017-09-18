@@ -9,8 +9,8 @@ services:
     volumes_from:
     - gitbucket-datavolume
     ports:
-    - 29418:29418/tcp
-    - 8200:8080/tcp
+    - ${ssh_port}:29418/tcp
+    - ${public_port}:8080/tcp
     labels:
       io.rancher.sidekicks: gitbucket-datavolume
       io.rancher.container.hostname_override: container_name

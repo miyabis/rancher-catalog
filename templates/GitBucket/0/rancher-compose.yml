@@ -3,6 +3,19 @@ catalog:
   name: "GitBucket"
   version: "v4.16.0"
   description: ""
+  questions:
+      - variable: "public_port"
+        label: "Public Port"
+        description: "Public listening port"
+        type: "int"
+        required: true
+        default: "8200"
+      - variable: "ssh_port"
+        label: "SSH Port"
+        description: "SSH listening port"
+        type: "int"
+        required: true
+        default: "29418"
 services:
   gitbucket-primary:
     scale: 1
