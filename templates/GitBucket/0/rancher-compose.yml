@@ -1,0 +1,12 @@
+version: '2'
+catalog:
+  name: "GitBucket"
+  version: "v4.16.0"
+  description: ""
+services:
+  gitbucket-primary:
+    scale: 1
+    start_on_create: true
+  gitbucket-datavolume:
+    scale: 1
+    start_on_create: true

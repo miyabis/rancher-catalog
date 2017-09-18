@@ -1,0 +1,5 @@
+name: GitBucket
+description: "GitHub Clone"
+version: v1.0
+category: "Versioning"
+projectURL: https://github.com/miyabis/rancher-catalog

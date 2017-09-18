@@ -1,0 +1,22 @@
+version: '2'
+services:
+  gitbucket-primary:
+    image: miyabis/gitbucket
+    environment:
+      DB_URL: 
+      DB_USER: 
+      DB_PASSWORD: 
+    volumes_from:
+    - gitbucket-datavolume
+    ports:
+    - 29418:29418/tcp
+    - 8200:8080/tcp
+    labels:
+      io.rancher.sidekicks: gitbucket-datavolume
+      io.rancher.container.hostname_override: container_name
+  gitbucket-datavolume:
+    image: busybox
+    volumes:
+    - /gitbucket:/gitbucket
+    labels:
+      io.rancher.container.start_once: 'true'
