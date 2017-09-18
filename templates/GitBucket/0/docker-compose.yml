@@ -3,9 +3,9 @@ services:
   gitbucket-primary:
     image: miyabis/gitbucket
     environment:
-      DB_URL: 
-      DB_USER: 
-      DB_PASSWORD: 
+      DB_URL: ${db_url}
+      DB_USER: ${db_user}
+      DB_PASSWORD: ${db_password}
     volumes_from:
     - gitbucket-datavolume
     ports:
