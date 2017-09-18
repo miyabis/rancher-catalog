@@ -17,6 +17,6 @@ services:
   gitbucket-datavolume:
     image: busybox
     volumes:
-    - /gitbucket:/gitbucket
+    - /gitbucket:/var/gitbucket
     labels:
       io.rancher.container.start_once: 'true'
