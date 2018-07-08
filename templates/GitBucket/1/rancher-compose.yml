@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "GitBucket"
-  version: "v4.26.0"
+  version: "v4.16.0"
   description: ""
   questions:
       - variable: "public_port"

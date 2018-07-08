@@ -3,4 +3,5 @@
 Container catalog for [Rancher](http://rancher.com/) of management platform.
 
 ## Catalog
-* GitBucket
+* [GitBucket](https://hub.docker.com/r/miyabis/gitbucket/)
+
