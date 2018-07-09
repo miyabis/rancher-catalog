@@ -1,7 +1,7 @@
 version: '2'
 services:
   gitbucket-primary:
-    image: miyabis/gitbucket:latest
+    image: miyabis/gitbucket:v4.16.0
     environment:
       DB_URL: ${db_url}
       DB_USER: ${db_user}
